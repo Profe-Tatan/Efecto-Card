@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover effect | by Jonathan Varón</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
+
+      body {
+        font-family: "Over the Rainbow", cursive;
+      }
+
+      .container {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+      }
+
+      .image {
+        background-image: linear-gradient(
+            180deg,
+            rgba(0, 139, 183, 1) 0%,
+            rgba(36, 150, 255, 0) 100%
+          ),
+          url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image:hover {
+        transform: scale(1.1);
+      }
+
+      h1 {
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="image">
+        <h1>Hola Mundo</h1>
+      </div>
+    </div>
+  </body>
+</html>
