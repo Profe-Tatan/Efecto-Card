@@ -2,6 +2,9 @@
 
       body {
         font-family: "Over the Rainbow", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .container {
